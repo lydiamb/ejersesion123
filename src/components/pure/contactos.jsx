@@ -4,10 +4,6 @@ import { Contacto } from '../../models/contacto';
 
 const ContactosComponent = ({ contacto }) => {
 
-    const cambiarEstado = (conectado) => {
-        console.log("TODO Cambiar estado");
-        contacto.conectado = true
-      }
 
     return (
         <div>
@@ -18,9 +14,7 @@ const ContactosComponent = ({ contacto }) => {
             contacto.conectado ? 'Contacto en linea'
                             : 'Contacto no disponible' }
             </h2>
-            <div>
-                <button onClick={cambiarEstado}>Cambiar estado</button>
-            </div>
+
         </div>
         
     );
